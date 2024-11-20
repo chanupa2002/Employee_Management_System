@@ -1,0 +1,111 @@
+/* General Navbar Styling */
+.navbar {
+    background: rgba(255, 255, 255, 0.1); /* Transparent glassmorphic background */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between; /* Space between brand and nav links */
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Logo Styling */
+.navbar-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Brand Styling */
+.navbar-brand {
+    color: #007bff; /* Blue color for brand text */
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    margin-right: auto;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Navbar Links */
+.navbar-nav {
+    display: flex;
+    gap: 1rem;
+    margin-left: auto; /* Align nav links to the right */
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Vibrant gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Eye-catching hover gradient */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link.active {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Highlight active */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link.disabled {
+    background: rgba(255, 255, 255, 0.1); /* Faint disabled link */
+    color: rgba(255, 255, 255, 0.6);
+    cursor: not-allowed;
+}
+
+/* Running Animation */
+.running-animation {
+    position: absolute;
+    right: 20px;
+    animation: run 10s infinite linear;
+}
+
+.runner {
+    font-size: 2rem;
+}
+
+/* Keyframes for running animation */
+@keyframes run {
+    0% {
+        right: -50px;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

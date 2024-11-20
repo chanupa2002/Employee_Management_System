@@ -1,0 +1,96 @@
+/* General Styling for the ShowEmployeeDetail Component */
+.showEmployeeDetails {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Blue-white theme */
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  /* Back to Main Button */
+  .showEmployeeDetails .btn-outline-danger {
+    border: 2px solid #007bff;
+    color: #ffffff;
+    background-color: #007bff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease;
+  }
+  
+  .showEmployeeDetails .btn-outline-danger:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Table Styling */
+  .table {
+    background-color: #007bff; /* Blue background for the table */
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* To maintain rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border: 2px solid #0056b3; /* Darker blue border */
+    text-align: left;
+    margin: auto;
+    width: 90%; /* Make the table longer */
+    color: #ffffff; /* White text for table details */
+  }
+  
+  /* Table Header */
+  .table thead th {
+    background-color: #0056b3; /* Dark blue for the header */
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  /* Table Rows */
+  .table tbody tr {
+    transition: background-color 0.2s ease;
+    height: 70px; /* Increased row height */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #3399ff; /* Brighter blue on hover */
+  }
+  
+  /* Table Cells */
+  .table tbody td {
+    padding: 20px 15px; /* Increased padding for more space inside each row */
+    font-size: 14px;
+    width: 300px;
+    color: #ffffff; /* White text for details */
+  }
+  
+  /* Centered Header */
+  .display-6-bold {
+    font-weight: bold;
+    color: #007bff; /* Blue text */
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Edit Button */
+  .btn-outline-info {
+    margin-top: 20px;
+    border: 2px solid #007bff;
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-info:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
